@@ -29,9 +29,16 @@
         </style>
     </head>
     <body>
+        <center><h2>Face Recognition</h2></center>
+      <center><p style="font-weight: 300; font-size: 1.8em;"> Tijani Ibrahim <br> HCS/20/0215 <br> Supervisor: MALLAM MUSA ALKALI TANKO</p></center>
+      <div class="col-lg-offset-2 col-lg-8">
+        <center><form  class="form-inline" action = "/stop" method = "post" enctype="multipart/form-data">          
+          <input type = "submit" class="btn btn-danger btn-md btn-block" value="Stop">
+             </form></center>
+                <center><form  class="form-inline" action = "/start" method = "post" enctype="multipart/form-data">          
+          <input type = "submit" class="btn btn-success btn-md btn-block" value="Start">
+             </form>
         <div id="container">
-            <video autoplay="true" id="videoElement">
-            </video>
             <img id="imageElement" src="{{ url_for('video_feed') }}">
             <canvas id="canvasElement"></canvas>
         </div>
